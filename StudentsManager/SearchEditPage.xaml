@@ -1,0 +1,32 @@
+﻿<Window x:Class="StudentsManager.SearchEditPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentsManager"
+       xmlns:materialdesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="600" Width="1024" ResizeMode="NoResize" WindowStyle="None" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <StackPanel Background="#FF622F96" >
+        <Grid Margin="20" VerticalAlignment="Top" Background="White" Height="560">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="40" HorizontalAlignment="Right" Margin="10">
+                <Button x:Name="backButton" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="Auto" Padding="0" Foreground="Black" Background="{x:Null}" BorderBrush="{x:Null}" Click="BackButton_Click"  Margin="0,0,0,10">
+                    <materialdesign:PackIcon Kind="ArrowBackCircle"/>
+                </Button>
+            </StackPanel>
+            <ComboBox x:Name="typeDetectorBox" materialdesign:HintAssist.Hint=" Search by" FontSize="22" Foreground="#FF622F96" Margin="59,0,720,430" FontWeight="Bold" SelectionChanged="TypeDetectorBox_SelectionChanged"/>
+            <materialdesign:PackIcon Kind="PersonSearch" Width="39" Height="39" Foreground="#FF622F96" VerticalAlignment="Bottom" Margin="51,0,0,420"/>
+            <TextBox x:Name="searchArgTextBox" materialdesign:HintAssist.Hint="" FontSize="18"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="95,90,547,420" BorderBrush="#FF622F96" IsEnabled="False" />
+            <Label x:Name="resultTextBox" Foreground="Red" HorizontalAlignment="Left" Height="35" Margin="57,145,0,0" VerticalAlignment="Top" Width="380" FontSize="20" />
+            <Button Content="Search" HorizontalAlignment="Left" Height="50" Margin="57,180,0,0" VerticalAlignment="Top" Width="100"
+                    FontFamily="Times New Roman (Headings CS)"
+                    FontSize="25"
+                    Foreground="White"
+                    Background="#FF622F96" Click="Search_Click"
+                    BorderBrush="{x:Null}"/>
+            <StackPanel x:Name="userDetailStackPanel" HorizontalAlignment="Left" Height="320" Margin="10,232,0,0" VerticalAlignment="Top" Width="964"/>
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="40" ShadowDepth="25" Direction="310"/>
+            </Grid.Effect>
+        </Grid>
+    </StackPanel>
+</Window>

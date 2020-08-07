@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="StudentsManager.UserControls.UserDetails"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:StudentsManager.UserControls" xmlns:materialdesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" Height="320" Width="964" Loaded="Windows_Loaded">
+    <StackPanel >
+        <Grid Margin="20" VerticalAlignment="Top" Background="White" Height="280">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="40" HorizontalAlignment="Right" Margin="10">
+            </StackPanel>
+            <Label x:Name="foundedUserTypeDetectorBox" FontSize="14" Foreground="#FF622F96" Margin="59,50,760,200"/>
+            <!--<Button x:Name="browserButton" Margin="470,15,200,0" Height="250" Background="{x:Null}" Click="BrowserButton_Click" IsEnabled="False">
+                <Image x:Name="mainPic" Source="C:\Users\Mahdi Farro\Desktop\StudentManaging_V2\Pics\NoImage.PNG" Stretch="Fill"/>
+            </Button>-->
+
+            <materialdesign:PackIcon Kind="RenameBox" Width="26" Height="26" Foreground="#FF622F96" VerticalAlignment="Bottom" Margin="51,0,0,155"/>
+            <TextBox x:Name="nameTextBox" materialdesign:HintAssist.Hint=" Full Name" FontSize="12"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="95,77,547,160" BorderBrush="#FF622F96" IsEnabled="False" />
+            <materialdesign:PackIcon Kind="IdCardOutline" Width="24" Height="26" Foreground="#FF622F96" VerticalAlignment="Bottom" Margin="51,0,0,95"/>
+            <TextBox x:Name="nationalCodeTextBox" materialdesign:HintAssist.Hint=" National ID" FontSize="12"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="95,140,547,100" BorderBrush="#FF622F96" IsEnabled="False" />
+            <materialdesign:PackIcon Kind="Details" Width="24" Height="24" Foreground="#FF622F96" VerticalAlignment="Bottom" Margin="51,0,0,35"/>
+            <TextBox x:Name="descriptionTextBox" materialdesign:HintAssist.Hint=" Description" FontSize="12"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="95,199,547,37" BorderBrush="#FF622F96" />
+            <Button Content="Edit" HorizontalAlignment="Left" Height="40" Margin="750,150,0,0" VerticalAlignment="Top" Width="150"
+                    FontFamily="Times New Roman (Headings CS)"
+                    FontSize="15"
+                    Foreground="White"
+                    Background="#FF622F96" Click="EditButton_Click"
+                    BorderBrush="{x:Null}"/>
+            <Button Content="Remove" HorizontalAlignment="Left" Height="40" Margin="750,205,0,0" VerticalAlignment="Top" Width="150"
+                    FontFamily="Times New Roman (Headings CS)"
+                    FontSize="15"
+                    Foreground="White"
+                    Background="#D50000" Click="RemoveButton_Click"
+                    BorderBrush="{x:Null}"/>
+            <Label x:Name="resultTextBox" Foreground="Red" HorizontalAlignment="Left" Height="37" Margin="519,441,0,0" VerticalAlignment="Top" Width="364" FontSize="20" />
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="40" ShadowDepth="25" Direction="310"/>
+            </Grid.Effect>
+        </Grid>
+    </StackPanel>
+</UserControl>
