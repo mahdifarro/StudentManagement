@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Mahdi Farro\Desktop\StudentManaging_V2\StudentManaging\StudentsManager\obj\Debug\
+E:\Github\StudentManagement\StudentsManager\obj\Debug\
 StudentsManager
 none
 false
 DEBUG;TRACE
-C:\Users\Mahdi Farro\Desktop\StudentManaging_V2\StudentManaging\StudentsManager\App.xaml
+E:\Github\StudentManagement\StudentsManager\App.xaml
 6-1396157193
 
-14-856817694
-262126459831
+15-1699177061
+26-1447152973
 AddPage.xaml;AdminWindow.xaml;EditInfo.xaml;LoginForm.xaml;SearchEditPage.xaml;UserControls\UserDetails.xaml;
 
-False
+True
 

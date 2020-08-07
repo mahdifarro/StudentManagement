@@ -43,7 +43,7 @@ namespace StudentsManager
                 
                 string name = nameTextBox.Text;
                 int nationalCode = Int32.Parse(nationalCodeTextBox.Text);
-                string imageAddress = mainPic.Source.ToString();
+                string imageAddress = imageAdd;
                 string role = typeDetectorBox.Text;
                 string description = descriptionTextBox.Text;
                 bool isAdmin;

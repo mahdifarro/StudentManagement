@@ -1,4 +1,1 @@
-{"Name":"s","NationalCode":0,"ImageAddress":"C:\\Users\\Mahdi Farro\\Desktop\\StudentManaging_V2\\StudentManaging\\StudentsManager\\bin\\Debug\\Images\\s.jpg","Role":"Student","Password":"0","IsAdmin":false,"Description":""}
-{"Name":"mahdi","NationalCode":100,"ImageAddress":"C:\\Users\\Mahdi Farro\\Desktop\\StudentManaging_V2\\StudentManaging\\StudentsManager\\bin\\Debug\\Images\\mahdi.jpg","Role":"Manager","Password":"mahdi","IsAdmin":true,"Description":"lala"}
-{"Name":"raziya","NationalCode":80,"ImageAddress":"C:\\Users\\Mahdi Farro\\Desktop\\StudentManaging_V2\\StudentManaging\\StudentsManager\\bin\\Debug\\Images\\raziya.jpg","Role":"Student","Password":"0","IsAdmin":false,"Description":"mallim"}
-{"Name":"re","NationalCode":1,"ImageAddress":"C:\\Users\\Mahdi Farro\\Desktop\\StudentManaging_V2\\StudentManaging\\StudentsManager\\bin\\Debug\\Images\\re.PNG","Role":"Manager","Password":"1","IsAdmin":false,"Description":"s"}
+{"Name":"admin","NationalCode":1,"ImageAddress":"C:\\Users\\Mahdi Farro\\Desktop\\StudentManagement-master\\StudentsManager\\bin\\Debug\\Images\\admin.png","Role":"Manager","Password":"1","IsAdmin":true,"Description":"admin"}
