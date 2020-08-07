@@ -59,6 +59,7 @@ namespace StudentsManager
                 {
                     resultTextBox.Content = "User already existed!Choose another Name";
                     nameTextBox.BorderBrush = Brushes.Red;
+                    throw new Exception("Duplicate User");
                 }   
                 string imageExtension=Path.GetExtension(imageAdd);
                 assistant.CopyFile(imageAdd, assistant.AppPath + @"Images\" + name+imageExtension);
